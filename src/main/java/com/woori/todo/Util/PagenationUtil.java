@@ -43,6 +43,7 @@ public class PagenationUtil {
         pageInfo.put("prevPage",prevPage);
         pageInfo.put("nextPage",nextPage);
         pageInfo.put("currentPage",currentPage);
+        pageInfo.put("lastPage",lastPage);
 
 
         return pageInfo;

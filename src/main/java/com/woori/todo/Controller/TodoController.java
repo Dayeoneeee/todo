@@ -109,7 +109,7 @@ public class TodoController {
         //서비스를 통해 데이터 삭제
         todoService.delete(id);
 
-        return "redirect:/a";
+        return "redirect:/list";
     }
 
 }

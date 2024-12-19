@@ -1,7 +1,9 @@
 package com.woori.todo.DTO;
 
 import lombok.*;
+import org.springframework.format.annotation.DateTimeFormat;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 
 @Getter
@@ -16,7 +18,8 @@ public class TodoDTO {
     private Integer id;     //일련번호
     private String title;   //제목
     private String todo;    //해야할일
-    private LocalDateTime datetodo; //날짜
+    @DateTimeFormat(pattern="yyyy-MM-dd")
+    private LocalDate datetodo; //날짜 날짜전송 -> 날짜시간
     private String importance;  //중요도
     private String status;  //상태
     private LocalDateTime regdate;
